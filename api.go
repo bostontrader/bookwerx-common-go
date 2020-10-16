@@ -9,7 +9,7 @@ import (
 )
 
 // Generic get on the API.  Actually this would work on any url.
-func get(client *httpclient.Client, url string) ([]byte, error) {
+func Get(client *httpclient.Client, url string) ([]byte, error) {
 
 	methodName := "bookwerx-common-go:api.go:get"
 	req, err := http.NewRequest("GET", url, nil)
@@ -40,5 +40,3 @@ func get(client *httpclient.Client, url string) ([]byte, error) {
 	return body, nil
 
 }
-
-
